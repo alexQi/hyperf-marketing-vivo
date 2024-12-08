@@ -5,14 +5,15 @@ namespace HyperfMarketing\Vivo\Account;
 use HyperfMarketing\Vivo\Caller;
 
 /**
- * Advertisement
+ * Advertiser
  *
  * @author  alex
- * @package App\Librarys\Vivo\Services\Advertisement
+ * @package HyperfMarketing\Vivo\Account\Advertiser
  */
 class Advertiser extends Caller
 {
     /**
+     * @document https://open-ad.vivo.com.cn/doc/index?id=268
      * @param $params
      *
      * @return \AlexQiu\Sdkit\Support\Collection|array|object|\Psr\Http\Message\ResponseInterface|string

@@ -13,6 +13,8 @@ use HyperfMarketing\Vivo\Caller;
 class Balance extends Caller
 {
     /**
+     * @document https://open-ad.vivo.com.cn/doc/index?id=286
+     *
      * @return \AlexQiu\Sdkit\Support\Collection|array|object|\Psr\Http\Message\ResponseInterface|string
      * @throws \AlexQiu\Sdkit\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException

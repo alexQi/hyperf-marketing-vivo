@@ -11,6 +11,7 @@ use AlexQiu\Sdkit\ServiceContainer;
 use HyperfMarketing\Vivo\Providers\CallerProvider;
 use HyperfMarketing\Vivo\Providers\HttpServiceClientProvider;
 use HyperfMarketing\Vivo\Services\Account;
+use HyperfMarketing\Vivo\Services\DataInsight;
 use HyperfMarketing\Vivo\Services\Oauth;
 use HyperfMarketing\Vivo\Services\Promotion;
 
@@ -18,9 +19,10 @@ use HyperfMarketing\Vivo\Services\Promotion;
  * Service
  *
  *
- * @property Account   $account
- * @property Oauth     $oauth
- * @property Promotion $promotion
+ * @property Account     $account
+ * @property Oauth       $oauth
+ * @property Promotion   $promotion
+ * @property DataInsight $dataInsight
  * @author  alex
  * @package HyperfMarketing\Vivo\Service
  */

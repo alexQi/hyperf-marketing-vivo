@@ -8,12 +8,13 @@ use HyperfMarketing\Vivo\Caller;
  * Group
  *
  * @author  alex
- * @package HyperfMarketing\Vivo\Services\Promotion\Group
+ * @package HyperfMarketing\Vivo\Promotion\Group
  */
 class Group extends Caller
 {
     /**
-     * 获取广告计划信息
+     * 查询广告组列表
+     * @document https://open-ad.vivo.com.cn/doc/index?id=188
      *
      * @param $params
      *
@@ -27,6 +28,9 @@ class Group extends Caller
     }
 
     /**
+     * 批量修改广告组状态
+     * @document https://open-ad.vivo.com.cn/doc/index?id=194
+     *
      * @param array $params
      *
      * @return \AlexQiu\Sdkit\Support\Collection|array|object|\Psr\Http\Message\ResponseInterface|string
@@ -39,6 +43,9 @@ class Group extends Caller
     }
 
     /**
+     * 批量修改出价
+     * @document https://open-ad.vivo.com.cn/doc/index?id=193
+     *
      * @param array $params
      *
      * @return \AlexQiu\Sdkit\Support\Collection|array|object|\Psr\Http\Message\ResponseInterface|string

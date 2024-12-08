@@ -5,15 +5,16 @@ namespace HyperfMarketing\Vivo\Promotion;
 use HyperfMarketing\Vivo\Caller;
 
 /**
- * Campaign
+ * Creative
  *
  * @author  alex
- * @package App\Librarys\Vivo\Services\Campaign
+ * @package HyperfMarketing\Vivo\Promotion\Creative
  */
 class Creative extends Caller
 {
     /**
      * 查询广告创意
+     * @document https://open-ad.vivo.com.cn/doc/index?id=202
      *
      * @param array $params
      *
@@ -27,6 +28,9 @@ class Creative extends Caller
     }
 
     /**
+     * 修改广告创意状态
+     * @document https://open-ad.vivo.com.cn/doc/index?id=204
+     *
      * @param array $params
      *
      * @return \AlexQiu\Sdkit\Support\Collection|array|object|\Psr\Http\Message\ResponseInterface|string

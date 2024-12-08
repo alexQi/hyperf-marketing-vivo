@@ -8,13 +8,14 @@ use HyperfMarketing\Vivo\Caller;
  * Campaign
  *
  * @author  alex
- * @package App\Librarys\Vivo\Services\Campaign
+ * @package HyperfMarketing\Vivo\Promotion\Campaign
  */
 class Campaign extends Caller
 {
 
     /**
-     * 获取广告计划信息
+     * 查询广告计划列表
+     * @document https://open-ad.vivo.com.cn/doc/index?id=254
      *
      * @param array $params
      *
@@ -28,13 +29,9 @@ class Campaign extends Caller
     }
 
     /**
-     * @param array $query
-     * @param array $params
+     * 批量启停计划
+     * @document https://open-ad.vivo.com.cn/doc/index?id=255
      *
-     * @return true
-     * @throws \GuzzleHttp\Exception\GuzzleException
-     */
-    /**
      * @param array $params
      *
      * @return \AlexQiu\Sdkit\Support\Collection|array|object|\Psr\Http\Message\ResponseInterface|string

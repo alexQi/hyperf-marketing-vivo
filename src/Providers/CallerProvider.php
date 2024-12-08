@@ -6,7 +6,9 @@ use AlexQiu\Sdkit\ServiceContainer;
 use HyperfMarketing\Vivo\Account\ServiceProvider as AccountProvider;
 use HyperfMarketing\Vivo\Oauth\ServiceProvider as OauthProvider;
 use HyperfMarketing\Vivo\Promotion\ServiceProvider as PromotionProvider;
+use HyperfMarketing\Vivo\DataInsight\ServiceProvider as DataInsightProvider;
 use HyperfMarketing\Vivo\Services\Account;
+use HyperfMarketing\Vivo\Services\DataInsight;
 use HyperfMarketing\Vivo\Services\Oauth;
 use HyperfMarketing\Vivo\Services\Promotion;
 
@@ -48,6 +50,14 @@ class CallerProvider
                 ]
             );
             return new Promotion($service);
+        });
+        $service->getContainer()->set("dataInsight", function () use ($service) {
+            $service->registerProviders(
+                [
+                    DataInsightProvider::class
+                ]
+            );
+            return new DataInsight($service);
         });
     }
 }
