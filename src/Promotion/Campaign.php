@@ -42,4 +42,19 @@ class Campaign extends Caller
     {
         return $this->SendPost("/openapi/v1/ad/campaign/pause/toggle", $params);
     }
+
+    /**
+     * 修改计划名称
+     * @document https://open-ad.vivo.com.cn/doc/index?id=252
+     *
+     * @param array $params
+     *
+     * @return \AlexQiu\Sdkit\Support\Collection|array|object|\Psr\Http\Message\ResponseInterface|string
+     * @throws \AlexQiu\Sdkit\Exceptions\InvalidConfigException
+     * @throws \GuzzleHttp\Exception\GuzzleException
+     */
+    public function editName(array $params)
+    {
+        return $this->SendPost("/openapi/v1/ad/campaign/editName", $params);
+    }
 }
